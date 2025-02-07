@@ -1,14 +1,10 @@
-fetch('../components/navbar/navbar.html')
+fetch('../components/sidebar/sidebar.html')
     .then(response => response.text())
-    .then(data => document.getElementById('navbar').innerHTML = data)
-    .catch(error => console.error('Error loading navbar:', error));
+    .then(data => document.getElementById('sidebar').innerHTML = data)
+    .catch(error => console.error('Error loading sidebar:', error));
 
-<!--function for open and close menubar-->
-function showMenubar() {
-    const menubar = document.querySelector('.menubar')
-    menubar.style.display = 'flex'
-}
-function closeMenubar(){
-    const menubar = document.querySelector('.menubar' )
-    menubar.style.display = 'none'
-}
+// <!--function for scrol up-->
+// function backToTop() {
+//     window.scrollTo({ top: 0, behavior: 'smooth' });
+// }
+

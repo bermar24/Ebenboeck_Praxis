@@ -3,8 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <title>Services Workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <!--    import font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
+<!--Import Navbar-->
+<header>
+    <!--Import Navbar-->
+    <div id="navbar"></div>
+    <script src="../components/navbar/index.js"></script>
+</header>
+<main id="Top">
+    <!--Top division in Services-->
+    <section id="topServices" >
+        <div>
+            <a href="servicesTreatment.html"><strong>Treatments</strong></a>
+            <ul>
+                <li><a href="./servicesTreatment.html">Physiotherapy</a></li>
+                <li><a href="./servicesTreatment.html">Manual Therapy</a></li>
+                <li><a href="./servicesTreatment.html">Lymph Drainage</a></li>
+                <li><a href="./servicesTreatment.html">Massages</a></li>
+                <li><a href="./servicesTreatment.html">Functional Training</a></li>
+            </ul>
+        </div>
+        <div>
+            <a href="servicesWorkshop.html"><strong>Workshops</strong></a>
+            <img src="../assets/images/workshop.png" alt="Workshops" title="workshop photo" style="max-height: 90%"/>
+        </div>
+    </section>
+    <!--Content Workshops-->
+    <section>
+        <h1>Workshops</h1>
+
+        <article>
+            <h3>Preventive</h3>
+            <div class="content">
+                <section>
+                    <p>text here</p>
+                </section>
+                <img class="sidePhoto" src="#" alt="Preventive" title="Preventive photo"/>
+             </div>
+            <button class="contButton"><a href="contact.html"></a>Request</button>
+        </article>
+        <article>
+            <h3>Patatas</h3>
+            <div class="content">
+                <section>
+                    <p>text here</p>
+                </section>
+                <img class="sidePhoto" src="#" alt="Workshops" title="Workshops photo"/>
+            </div>
+            <button class="contButton"><a href="contact.html"></a>Request</button>
+        </article>
+        <article>
+            <img src="#" alt="somephoto" title="Some photo"/>
+            <img src="#" alt="somephoto" title="Some photo"/>
+        </article>
+    </section>
+    <!--Import Sidebar-->
+    <section>
+        <div id="sidebar"></div>
+        <script src="../components/sidebar/index.js"></script>
+    </section>
+</main>
+<!--Import footer-->
+<div id="footer"></div>
+<script src="../components/footer/index.js"></script>
 
 </body>
 </html>
