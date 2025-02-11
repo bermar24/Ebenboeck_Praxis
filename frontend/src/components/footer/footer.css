@@ -1,13 +1,14 @@
 /* footer.css */
 
 body {
+    
     font-family: 'Poppins', sans-serif;
     font-size: 14px; /* Kleinere Grundschriftgröße */
 }
 
 .footer {
-    background-color: rgb(38, 123, 191);
-    color: white;
+    background-color: rgba(0, 155, 252, 0.2);
+    color: rgb(0, 0, 0);
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -49,7 +50,7 @@ body {
 }
 
 .footer-nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     margin: 5px 15px;
     font-size: 14px; /* Kleinere Schriftgröße bei Links */
@@ -59,7 +60,7 @@ body {
 }
 
 .footer-nav a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgb(38, 123, 191);
     color: #ffdd57;
 }
 
