@@ -1,10 +1,12 @@
-fetch('../components/sidebar/sidebar.html')
-    .then(response => response.text())
-    .then(data => document.getElementById('sidebar').innerHTML = data)
-    .catch(error => console.error('Error loading sidebar:', error));
+// Referenz auf den Button
+const backToTopBtn = document.getElementById("backToTopBtn");
 
-// <!--function for scrol up-->
-// function backToTop() {
-//     window.scrollTo({ top: 0, behavior: 'smooth' });
-// }
-
+// Event-Listener für das Scrollen
+window.addEventListener("scroll", () => {
+  // Wenn weiter als 300px gescrollt wurde, Button einblenden
+  if (window.scrollY > 300) {
+    backToTopBtn.classList.add("visible");
+  } else {
+    backToTopBtn.classList.remove("visible");
+  }
+});
