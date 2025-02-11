@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Back to Top</title>
 
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../components/sidebar/sidebar.css"/>
+  <!-- Verlinkung des CSS -->
+  <link rel="stylesheet" href="sidebar.css" />
 </head>
-<body>
-<!-- BACK TO TOP BUTTON -->
-<!--<aside>-->
-<!--    <div onclick="backToTop()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/></svg></a></div>-->
-<!--</aside>-->
-<a href="#Top" class="back-to-top">
-    <span class="material-icons">arrow_upward</span>
-</a>
+<body id="Top">
+
+  <!-- Back-to-Top-Button mit SVG -->
+  <a href="#Top" class="back-to-top" id="backToTopBtn">
+    <svg xmlns="http://www.w3.org/2000/svg" 
+         height="24px" 
+         viewBox="0 -960 960 960" 
+         width="24px" 
+         fill="currentColor">
+      <path d="m296-224-56-56 240-240 240 240-56 56-184-183-184 183Zm0-240-56-56 240-240 240 240-56 56-184-183-184 183Z"/>
+    </svg>
+  </a>
+
+  <!-- Verlinkung des JavaScript -->
+  <script src="index.js"></script>
 </body>
 </html>
