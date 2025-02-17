@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -12,7 +12,13 @@
     --secondary-color: rgb(37, 163, 179);
     --accent-color: rgb(18, 108, 132);
     --text-color: rgb(8, 58, 81);
-    --navbar: rgb(38, 123, 191)
+    --navbar: rgb(38, 123, 191, 0.2);
+    --content: rgb(236, 236, 236);
+}
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 body{
     min-height: 100vh ;
@@ -21,77 +27,92 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 90px;
 }
-/*Services*/
-#topServices {
-    flex-direction: row;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
+#navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
-#topServices div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    height: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    transition: 0.3s;
-    background-color: var(--block);
-}
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 60%;
-    margin: 20px;
-    transition: 0.3s;
-    background-color: var(--block);
+/* Typography */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
-article p {
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
-article img {
-    width: 300px;
+h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+p {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+/*Images*/
+img{
+    width: 100%;
     height: auto;
     object-fit: cover;
     margin-left: 20px;
 }
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px;
-    /*width: 100%;*/
-    /*max-width: 800px;*/
-}
-.contButton {
+.title{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70px;
-    height: 50px;
-    background-color: var(--accent-color);
-    border: 1px solid white;
-    border-radius: 50%;
-    color: white;
+    margin: 0;
+    background-color: var(--content);
+}
+.title h2{opacity: 0.5;}
+
+
+/* Media Queries for responsiveness */
+@media (min-width: 576px) {
+    body {
+        font-size: 1.125rem;
+    }
+
+    main {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    aside {
+        flex: 1;
+    }
+
+    .content {
+        flex: 3;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 3rem;
+    }
 }
 
 /* css for the portfolio section  */

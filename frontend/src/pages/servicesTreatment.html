@@ -5,6 +5,7 @@
     <title>Services Treatment</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/services.css">
     <!--    import font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,11 +16,12 @@
 <!--Import Navbar-->
 <div id="navbar"></div>
 <script src="../components/navbar/index.js"></script>
+    <div class="title"><h2>Treatments</h2></div>
 </header>
 <main id="Top">
 <!--Top division in Services-->
-<section id="topServices" >
-<div>
+<section id="topServices" class="top-section" >
+<div class="left-div">
     <a href="servicesTreatment.html"><strong>Treatments</strong></a>
     <ul>
         <li><a href="#Physiotherapy">Physiotherapy</a></li>
@@ -28,17 +30,15 @@
         <li><a href="#Massages">Massages</a></li>
         <li><a href="#FunctionalTraining">Functional Training</a></li>
     </ul>
-</div>
-<div>
+</div >
+<div class="right-div">
     <a href="servicesWorkshop.html"><strong>Workshops</strong></a>
-    <img src="../assets/images/workshop.png" alt="Workshops" title="workshop photo" style="max-height: 90%"/>
+    <img src="../assets/images/workshop.png" alt="Workshops" title="workshop photo"/>
 </div>
 </section>
 <!--Content Treatment-->
-<section>
-    <h1>Treatments</h1>
-
-<article id="Physiotherapy">
+<section class="bottom-section">
+<article id="Physiotherapy" class="article">
     <h3>Physiotherapy </h3>
     <div class="content">
     <section>
@@ -50,7 +50,7 @@
     <button class="contButton"><a href="contact.html">Request</a></button>
 
 </article>
-<article id="ManualTherapy">
+<article id="ManualTherapy" class="article">
     <h3>Manual Therapy</h3>
     <div class="content">
     <p>Manual therapy uses hands-on techniques to diagnose and treat musculoskeletal conditions. It’s particularly effective for relieving tension, improving joint function, and reducing pain.
@@ -59,7 +59,7 @@
     </div>
     <button class="contButton"><a href="contact.html">Request</a></button>
 </article>
-<article id="LymphDrainage">
+<article id="LymphDrainage" class="article">
     <h3>Lymph Drainage</h3>
     <div class="content">
     <section>
@@ -72,7 +72,7 @@
     </div>
     <button class="contButton"><a href="contact.html">Request</a></button>
 </article>
-<article id="Massages">
+<article id="Massages" class="article">
     <h3>Massages</h3>
     <div class="content">
         <section>
@@ -85,7 +85,7 @@
     </div>
     <button class="contButton"><a href="contact.html">Request</a></button>
 </article>
-<article id="FunctionalTraining">
+<article id="FunctionalTraining" class="article">
     <h3>Functional training</h3>
     <div class="content">
     <section>
