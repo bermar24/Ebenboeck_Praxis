@@ -114,22 +114,22 @@ img{
 }
 
 /* css for the portfolio section  */
-.container{
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    padding-inline: 20px;
-    padding: 20px;
-}
-.container section{
-    width: calc( 100% - 40px);
-}
-img{
-    width: 150px;
-    height: 150px;
-    border-radius:20px;
-}
+/*.container{*/
+/*    width: 100vw;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    row-gap: 20px;*/
+/*    padding-inline: 20px;*/
+/*    padding: 20px;*/
+/*}*/
+/*.container section{*/
+/*    width: calc( 100% - 40px);*/
+/*}*/
+/*img{*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-radius:20px;*/
+/*}*/
 .profile-intro {
     display: flex;
     align-items: center;
