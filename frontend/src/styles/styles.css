@@ -1,5 +1,5 @@
 *{
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -92,4 +92,187 @@ article img {
     border: 1px solid white;
     border-radius: 50%;
     color: white;
+}
+
+/* css for the portfolio section  */
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-inline: 20px;
+    padding: 20px;
+}
+.container section{
+    width: calc( 100% - 40px);
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius:20px;
+}
+.profile-intro {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    column-gap: 100px;
+    margin-left: 10px;
+}
+
+.photo-profile {
+    width: 150px;
+    height: 150px;
+    background-color: var(--block);
+    text-align: center;
+    line-height: 150px;
+    border-radius: 20px;
+
+}
+
+.description {
+    width: 90%;
+    background-color: var(--block);
+    text-align: left;
+    border-radius: 10px;
+    height: flex;
+}
+
+.certifications {
+    background-color: var(--block);
+    align-items: start;
+    padding: 20px;
+    border-radius: 0px;
+    height: flex;
+    margin-left: 50px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.portfolio {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 300px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    background-color:var(--block);
+    text-align: center;
+    line-height: 150px;
+    border-radius: 20px;
+}
+.review-items{
+    border-radius: 10px;
+}
+.reviews {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.box {
+    width: 70px;
+    height: 40px;
+    background-color:var(--block);
+}
+
+/* css for the contact section  */
+
+.contact-section {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact-text{
+    width:30%;
+    background-color: var(--block);
+    height: flex;
+    text-align: start;
+
+} .contact-form {
+    width: 48%;
+    background-color: var(--block);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 80px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.map-instructions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.map-box {
+    width: flex;
+    height: flex;
+    background-color: var(--block);
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.instructions-box {
+    width: 48%;
+    height: flex;
+    background-color: var(--block);
+    text-align: center;
+    line-height: 150px;
 }
