@@ -13,27 +13,29 @@
     --accent-color: rgb(18, 108, 132);
     --text-color: rgb(8, 58, 81);
     --navbar: rgb(38, 123, 191, 0.2);
-    --content: rgb(236, 236, 236);
+    --article-color: rgb(236, 236, 236);
 }
-.container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 body{
     min-height: 100vh ;
     background-color: var(--background) ;
     font-family: 'Poppins', sans-serif;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 90px;
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    /*margin: 90px auto 0 auto;*/
+    margin: 0 auto;
 }
 #navbar{
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     width: 100%;
-    z-index: 1000;
+    /*z-index: 1000;*/
+    /*max-width: 1000px;*/
 }
 /* Typography */
 h1 {
@@ -52,12 +54,15 @@ h3 {
     margin-bottom: 1rem;
     color: var(--text-color);
 }
-p {
+p, ol , ul, button  {
     font-size: 0.75rem;
     margin-bottom: 1rem;
     color: var(--text-color);
 }
-
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /*Images*/
 img{
     width: 100%;
@@ -65,14 +70,7 @@ img{
     object-fit: cover;
     margin-left: 20px;
 }
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    background-color: var(--content);
-}
-.title h2{opacity: 0.5;}
+
 
 
 /* Media Queries for responsiveness */
