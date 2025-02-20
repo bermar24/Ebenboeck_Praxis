@@ -1,58 +1,75 @@
 /* BACK TO TOP */
 
 /* Für sanftes Hochscrollen */
-html {
-	scroll-behavior: smooth;
-  }
-  
-  /* Basis-Button, zunächst unsichtbar */
-  .back-to-top {
+/*html {*/
+/*	scroll-behavior: smooth;*/
+/*  }*/
+/*  */
+/*  !* Basis-Button, zunächst unsichtbar *!*/
+/*  .back-to-top {*/
+/*	position: fixed;*/
+/*	bottom: 2rem;*/
+/*	right: 2rem;*/
+/*  */
+/*	!* Quadratische Form *!*/
+/*	width: 3rem;*/
+/*	height: 3rem;*/
+/*  */
+/*	display: flex;*/
+/*	align-items: center;*/
+/*	justify-content: center;*/
+/*  */
+/*	!* Deine Wunschfarbe als Hintergrund *!*/
+/*	background-color: #000080;*/
+/*  */
+/*	border-radius: 0.5rem;*/
+/*  */
+/*	!* Animation/Übergangseffekt *!*/
+/*	transition: opacity 0.2s ease-out, background-color 0.2s ease-out, transform 0.2s ease-out;*/
+/*  */
+/*	!* Unsichtbar, keine Klicks *!*/
+/*	opacity: 0;*/
+/*	pointer-events: none;*/
+/*	text-decoration: none;*/
+/*  }*/
+/*  */
+/*  !* Sobald wir scrollen (JS fügt .visible hinzu), wird der Button sichtbar *!*/
+/*  .back-to-top.visible {*/
+/*	opacity: 1;*/
+/*	pointer-events: auto;*/
+/*  }*/
+/*  */
+/*  !* SVG-Größe und Farbe *!*/
+/*  .back-to-top svg {*/
+/*	width: 2rem;*/
+/*	height: 2rem;*/
+/*	fill: #ffffff;*/
+/*  }*/
+/*  */
+/*  !* Hover-Effekt *!*/
+/*  .back-to-top:hover {*/
+/*	background-color: #0000ff; !* oder #00f *!*/
+/*	transform: translateY(-3px);*/
+/*  }*/
+/*  */
+/*  .back-to-top:hover svg {*/
+/*	transform: translateY(-1px);*/
+/*  }*/
+/**/
+#scrollToTop {
 	position: fixed;
-	bottom: 2rem;
-	right: 2rem;
-  
-	/* Quadratische Form */
-	width: 3rem;
-	height: 3rem;
-  
-	display: flex;
-	align-items: center;
-	justify-content: center;
-  
-	/* Deine Wunschfarbe als Hintergrund */
-	background-color: #000080;
-  
-	border-radius: 0.5rem;
-  
-	/* Animation/Übergangseffekt */
-	transition: opacity 0.2s ease-out, background-color 0.2s ease-out, transform 0.2s ease-out;
-  
-	/* Unsichtbar, keine Klicks */
-	opacity: 0;
-	pointer-events: none;
-	text-decoration: none;
-  }
-  
-  /* Sobald wir scrollen (JS fügt .visible hinzu), wird der Button sichtbar */
-  .back-to-top.visible {
-	opacity: 1;
-	pointer-events: auto;
-  }
-  
-  /* SVG-Größe und Farbe */
-  .back-to-top svg {
-	width: 2rem;
-	height: 2rem;
-	fill: #ffffff;
-  }
-  
-  /* Hover-Effekt */
-  .back-to-top:hover {
-	background-color: #0000ff; /* oder #00f */
-	transform: translateY(-3px);
-  }
-  
-  .back-to-top:hover svg {
-	transform: translateY(-1px);
-  }
-  
+	bottom: 30px;
+	right: 30px;
+	background-color: green;
+	/*color: white;*/
+	padding: 15px 20px;
+	/*font-size: 24px;*/
+	border-radius: 50%;
+	cursor: pointer;
+	display: none; /* Hidden by default */
+	transition: opacity 0.3s ease;
+}
+
+#scrollToTop:hover {
+	background-color: yellowgreen;
+}
