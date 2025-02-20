@@ -122,7 +122,7 @@ img{
     position: fixed;
     bottom: 30px;
     right: 30px;
-    background-color: #007bff;
+    /*background-color: #007bff;*/
     /*color: white;*/
     padding: 15px 20px;
     /*font-size: 24px;*/
@@ -133,7 +133,7 @@ img{
 }
 
 #scrollToTop:hover {
-    background-color: white;
+    background-color: #007bff
 }
 
 @media (min-width: 768px) {
