@@ -133,7 +133,7 @@ img{
 }
 
 #scrollToTop:hover {
-    background-color: #007bff
+    background-color: white;
 }
 
 @media (min-width: 768px) {
