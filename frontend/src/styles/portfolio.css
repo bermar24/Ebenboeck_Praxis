@@ -1,0 +1,173 @@
+
+/* css for the portfolio section  */
+/*.container{*/
+/*    width: 100vw;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    row-gap: 20px;*/
+/*    padding-inline: 20px;*/
+/*    padding: 20px;*/
+/*}*/
+/*.container section{*/
+/*    width: calc( 100% - 40px);*/
+/*}*/
+/*img{*/
+/*    width: 150px;*/
+/*    height: 150px;*/
+/*    border-radius:20px;*/
+/*}*/
+.profile-intro {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    column-gap: 100px;
+    margin-left: 10px;
+}
+
+.photo-profile {
+    width: 150px;
+    height: 150px;
+    background-color: var(--block);
+    text-align: center;
+    line-height: 150px;
+    border-radius: 20px;
+
+}
+
+.description {
+    width: 90%;
+    background-color: var(--block);
+    text-align: left;
+    border-radius: 10px;
+    height: auto;
+}
+
+.certifications {
+    background-color: var(--block);
+    align-items: start;
+    padding: 20px;
+    border-radius: 0;
+    height: auto;
+    margin-left: 50px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.portfolio {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 300px;
+}
+
+.photo {
+    width: 150px;
+    height: 150px;
+    background-color:var(--block);
+    text-align: center;
+    line-height: 150px;
+    border-radius: 20px;
+}
+.review-items{
+    border-radius: 10px;
+}
+.reviews {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.box {
+    width: 70px;
+    height: 40px;
+    background-color:var(--block);
+}
+
+/* Reviews Section */
+.reviews-section {
+    text-align: center;
+    margin: 100px auto;
+    padding: 40px 0;
+    background-color: var(--article-color);
+}
+
+.reviews-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.reviews-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Stil der Review-Box */
+.review-box {
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Name und Sterne */
+.review-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.review-stars {
+    color: gold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.review-date {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-size: 1rem;
+    color: black;
+}
+
+/* Pfeile */
+.prev-btn, .next-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.prev-btn:hover, .next-btn:hover {
+    transform: scale(1.1);
+}
