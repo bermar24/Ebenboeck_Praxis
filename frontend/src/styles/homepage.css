@@ -24,6 +24,7 @@
     left: 50%;
     bottom: 5%;
     transform: translateX(-50%);
+    visibility: hidden;
 }
 
 .hero-button {
@@ -135,3 +136,8 @@
 /*        padding: 10px 20px;*/
 /*    }*/
 /*}*/
+@media(min-width: 800px) {
+    .hero-button-container {
+        visibility: visible;
+    }
+}
