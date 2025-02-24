@@ -15,7 +15,7 @@
     width: 90%;
     max-width: 1200px;
   }
-  
+
   /* leftside: contact-text + Button */
   .footer-left {
     display: flex;
@@ -24,12 +24,12 @@
     flex: 1;
     min-width: 200px;
   }
-  
+
   /* Contact-Info text */
   .contact-info p {
     margin: 5px 0;
   }
-  
+
   /* Contact me Button/left */
   .contact-me {
     display: inline-block;
@@ -42,11 +42,11 @@
     transition: background-color 0.3s;
     width: fit-content;
   }
-  
+
   .contact-me:hover {
     background-color: rgb(8, 58, 81);
   }
-  
+
   /* center: Logo */
   .footer-center {
     flex: 1;

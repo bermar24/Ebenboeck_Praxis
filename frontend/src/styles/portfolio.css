@@ -1,106 +1,133 @@
-
-/* css for the portfolio section  */
-/*.container{*/
-/*    width: 100vw;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    row-gap: 20px;*/
-/*    padding-inline: 20px;*/
-/*    padding: 20px;*/
-/*}*/
+ /*css for the portfolio section  */
+.container{
+    /*width: 100vw;*/
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    /*row-gap: 20px;*/
+    /*padding-inline: 20px;*/
+    /*padding: 20px;*/
+}
 /*.container section{*/
 /*    width: calc( 100% - 40px);*/
 /*}*/
-/*img{*/
-/*    width: 150px;*/
-/*    height: 150px;*/
-/*    border-radius:20px;*/
-/*}*/
 .profile-intro {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 20px;
-    column-gap: 100px;
-    margin-left: 10px;
-}
-
-.photo-profile {
-    width: 150px;
-    height: 150px;
-    background-color: var(--block);
-    text-align: center;
-    line-height: 150px;
-    border-radius: 20px;
-
-}
-
-.description {
-    width: 90%;
-    background-color: var(--block);
-    text-align: left;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 1.25rem;
     border-radius: 10px;
-    height: auto;
+    text-align: left;
+    position: relative;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*flex-direction: row;*/
+    /*!*justify-content: center;*!*/
+    /*!*margin-top: 20px;*!*/
+    /*column-gap: 100px;*/
+    /*margin-left: 10px;*/
+}
+.photo-profile {
+    min-width: 150px;
+    max-width: 600px;
+    margin: 1rem
+    /*height: 150px;*/
+    /*background-color: var(--block);*/
+    /*text-align: center;*/
+    /*line-height: 150px;*/
+    /*border-radius: 20px;*/
+}
+.description {
+    padding: 0 1rem;
+    /*width: 90%;*/
+    /*background-color: var(--block);*/
+    /*text-align: left;*/
+    /*border-radius: 10px;*/
+    /*height: auto;*/
 }
 
 .certifications {
-    background-color: var(--block);
-    align-items: start;
-    padding: 20px;
-    border-radius: 0;
-    height: auto;
-    margin-left: 50px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    padding: 1.25rem;
+    border-radius: 5%;
+    text-align: left;
+    position: relative;
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background-color: var(--block);*/
+    /*align-items: start;*/
+    /*padding: 20px;*/
+    /*border-radius: 0;*/
+    /*height: auto;*/
+    /*margin-left: 50px;*/
 }
 
-.contact {
-    text-align: center;
-}
+/*.contact {*/
+/*    !*text-align: center;*!*/
+/*}*/
 
-.contact button {
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
+/*.contact button {*/
+/*    padding: 10px 15px;*/
+/*    background-color: #007bff;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 10px;*/
+/*    cursor: pointer;*/
 
-}
+/*}*/
 
 .portfolio {
+    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
+    flex: 1;
+    position: relative;
+    padding: 1rem;
     display:flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 300px;
+    flex-direction: column;
+    /*justify-content: center;*/
+    gap: 2rem;
+}
+.portfolio img{
+    width: 100%;
+    max-width: 300px;
+    /*height: 200px;*/
+    object-fit: cover;
+    /*padding: 1.25rem;*/
+    border-radius: 5%;
 }
 
 .photo {
-    width: 150px;
-    height: 150px;
-    background-color:var(--block);
-    text-align: center;
-    line-height: 150px;
-    border-radius: 20px;
+    /*width: 150px;*/
+    /*height: 150px;*/
+    /*background-color:var(--block);*/
+    /*text-align: center;*/
+    /*line-height: 150px;*/
+    /*border-radius: 20px;*/
 }
 .review-items{
-    border-radius: 10px;
+    /*border-radius: 10px;*/
 }
 .reviews {
-    text-align: center;
-    margin-bottom: 20px;
+    /*text-align: center;*/
+    /*margin-bottom: 20px;*/
 }
 
 .review-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*gap: 10px;*/
+    /*margin-top: 10px;*/
 }
 
 .box {
-    width: 70px;
-    height: 40px;
-    background-color:var(--block);
+    /*width: 70px;*/
+    /*height: 40px;*/
+    /*background-color:var(--block);*/
 }
 
 /* Reviews Section */
@@ -108,24 +135,22 @@
     text-align: center;
     margin: 100px auto;
     padding: 40px 0;
-    background-color: var(--article-color);
+    /*background-color: hsla(var(--text-color), 0.1);*/
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
-
 .reviews-title {
     font-size: 2rem;
     margin-bottom: 40px;
 }
-
 .reviews-container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
-
 /* Stil der Review-Box */
 .review-box {
-    width: 500px;
+    /*width: 500px;*/
     background-color: white;
     border-radius: 10px;
     border: 2px solid black;
@@ -133,31 +158,26 @@
     text-align: left;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
-
 /* Name und Sterne */
 .review-name {
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 .review-stars {
     color: gold;
-    font-size: 1.2rem;
+    /*font-size: 1.2rem;*/
     margin-bottom: 5px;
 }
-
 .review-date {
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
     color: gray;
     margin-bottom: 10px;
 }
-
 .review-text {
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     color: black;
 }
-
 /* Pfeile */
 .prev-btn, .next-btn {
     background-color: transparent;
@@ -167,7 +187,30 @@
     padding: 10px;
     transition: transform 0.2s ease-in-out;
 }
-
 .prev-btn:hover, .next-btn:hover {
     transform: scale(1.1);
 }
+ @media screen and (min-width: 768px) {
+     .profile-intro {
+         display: flex;
+         align-items: center;
+         flex-direction: row;
+         justify-content: center;
+         margin-top: 20px;
+     }
+     .portfolio {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+     }
+     .portfolio img {
+         width: 100%;
+         max-width: 400px;
+         height: 400px;
+         object-fit: cover;
+     }
+     .review-box {
+         width: 500px;
+     }
+
+ }

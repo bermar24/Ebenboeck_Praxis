@@ -1,4 +1,3 @@
-// Get the button
 let scrollToTop = document.getElementById("scrollToTop");
 
 // Show button when scrolling down
