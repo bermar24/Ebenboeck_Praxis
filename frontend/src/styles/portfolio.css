@@ -1,18 +1,11 @@
  /*css for the portfolio section  */
 .container{
-    /*width: 100vw;*/
     display: flex;
     flex-direction: column;
     padding: 1.25rem;
-    /*row-gap: 20px;*/
-    /*padding-inline: 20px;*/
-    /*padding: 20px;*/
 }
-/*.container section{*/
-/*    width: calc( 100% - 40px);*/
-/*}*/
 .profile-intro {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
     flex: 1;
     padding: 1.25rem;
     border-radius: 10px;
@@ -22,121 +15,53 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*flex-direction: row;*/
-    /*!*justify-content: center;*!*/
-    /*!*margin-top: 20px;*!*/
-    /*column-gap: 100px;*/
-    /*margin-left: 10px;*/
 }
 .photo-profile {
     min-width: 150px;
     max-width: 600px;
     margin: 1rem
-    /*height: 150px;*/
-    /*background-color: var(--block);*/
-    /*text-align: center;*/
-    /*line-height: 150px;*/
-    /*border-radius: 20px;*/
 }
 .description {
     padding: 0 1rem;
-    /*width: 90%;*/
-    /*background-color: var(--block);*/
-    /*text-align: left;*/
-    /*border-radius: 10px;*/
-    /*height: auto;*/
 }
-
 .certifications {
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
     flex: 1;
+    /*margin: 2rem auto;*/
     padding: 1.25rem;
-    border-radius: 5%;
+    /*border-radius: 5%;*/
     text-align: left;
     position: relative;
     min-height: 230px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*background-color: var(--block);*/
-    /*align-items: start;*/
-    /*padding: 20px;*/
-    /*border-radius: 0;*/
-    /*height: auto;*/
-    /*margin-left: 50px;*/
+    background-color: var(--article-color);
+    color: white;
 }
-
-/*.contact {*/
-/*    !*text-align: center;*!*/
-/*}*/
-
-/*.contact button {*/
-/*    padding: 10px 15px;*/
-/*    background-color: #007bff;*/
-/*    color: white;*/
-/*    border: none;*/
-/*    border-radius: 10px;*/
-/*    cursor: pointer;*/
-
-/*}*/
-
 .portfolio {
-    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
     flex: 1;
     position: relative;
     padding: 1rem;
     display:flex;
     flex-direction: column;
-    /*justify-content: center;*/
     gap: 2rem;
 }
 .portfolio img{
     width: 100%;
     max-width: 300px;
-    /*height: 200px;*/
     object-fit: cover;
-    /*padding: 1.25rem;*/
     border-radius: 5%;
 }
-
-.photo {
-    /*width: 150px;*/
-    /*height: 150px;*/
-    /*background-color:var(--block);*/
-    /*text-align: center;*/
-    /*line-height: 150px;*/
-    /*border-radius: 20px;*/
-}
-.review-items{
-    /*border-radius: 10px;*/
-}
-.reviews {
-    /*text-align: center;*/
-    /*margin-bottom: 20px;*/
-}
-
-.review-links {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*gap: 10px;*/
-    /*margin-top: 10px;*/
-}
-
-.box {
-    /*width: 70px;*/
-    /*height: 40px;*/
-    /*background-color:var(--block);*/
-}
-
 /* Reviews Section */
 .reviews-section {
     text-align: center;
     margin: 100px auto;
     padding: 40px 0;
-    /*background-color: hsla(var(--text-color), 0.1);*/
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    /*background-color: var(--primary-color);*/
+    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
 }
 .reviews-title {
     font-size: 2rem;
@@ -150,7 +75,6 @@
 }
 /* Stil der Review-Box */
 .review-box {
-    /*width: 500px;*/
     background-color: white;
     border-radius: 10px;
     border: 2px solid black;
@@ -160,22 +84,18 @@
 }
 /* Name und Sterne */
 .review-name {
-    /*font-size: 1.2rem;*/
     font-weight: bold;
     margin-bottom: 5px;
 }
 .review-stars {
     color: gold;
-    /*font-size: 1.2rem;*/
     margin-bottom: 5px;
 }
 .review-date {
-    /*font-size: 0.9rem;*/
     color: gray;
     margin-bottom: 10px;
 }
 .review-text {
-    /*font-size: 1rem;*/
     color: black;
 }
 /* Pfeile */
@@ -196,21 +116,25 @@
          align-items: center;
          flex-direction: row;
          justify-content: center;
-         margin-top: 20px;
+         margin: 20px auto;
+         max-width: 900px;
      }
      .portfolio {
          display: flex;
          flex-direction: row;
          align-items: center;
      }
+     .photo-profile {
+            width: 400px;
+            object-fit: cover;
+     }
      .portfolio img {
          width: 100%;
-         max-width: 400px;
-         height: 400px;
+         max-width: 300px;
+         height: 300px;
          object-fit: cover;
      }
      .review-box {
          width: 500px;
      }
-
  }
