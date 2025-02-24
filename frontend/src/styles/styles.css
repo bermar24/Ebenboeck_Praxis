@@ -8,12 +8,12 @@
 :root{
     --background: rgb(200, 230, 255);
     --block: rgb(150, 212, 220, 0.4);
-    --primary-color: rgb(63, 169, 245);
+    --primary-color: rgb(38, 123, 191, 0.2);
     --secondary-color: rgb(37, 163, 179);
     --accent-color: rgb(18, 108, 132, 0.6);
     --text-color: rgb(8, 58, 81);
-    --navbar: rgb(38, 123, 191, 0.2);
-    --article-color: rgb(236, 236, 236);
+    /*--navbar: rgb(38, 123, 191, 0.2);*/
+    --article-color: rgb(99,148,158, 0.4);
 }
 
 body{
