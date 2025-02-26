@@ -1,22 +1,33 @@
-Home
-│
-├── Portfolio
-│ ├── Ebenböck Bio (Qualifications and Experience)
-│ ├── Images ( Ebenböck Clinic)
-│ └── Client Reviews and Stories
-│
-├── Services
-│ ├── Treatments
-│ │ ├── Physiotherapy
-│ │ ├── Manual Therapy
-│ │ ├── Massages
-│ │ ├── Functional training
-│ │ └── Lymph Drainage
-│ │
-│ └── Workshops
-│   └── Group Sessions for Private Groups or companies
-│
-└── Contact
-├── Address (with Map)
-├── Phone and Email
-└── Online Booking Form
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://www.example.com/</loc>
+        <lastmod>2025-02-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://www.example.com/servicesWorkshop.html</loc>
+        <lastmod>2025-02-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.example.com/servicesTreatment.html</loc>
+        <lastmod>2025-02-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.example.com/portfolio.html</loc>
+        <lastmod>2025-02-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.example.com/contact.html</loc>
+        <lastmod>2025-02-26</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
