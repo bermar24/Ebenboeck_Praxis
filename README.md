@@ -34,3 +34,32 @@ domain, and uploading the necessary files.
 >This project will allow us to apply the concepts and techniques learned during the semester while
 helping our client establish a professional online presence that supports the growth of her
 business.
+
+
+
+### 📌 Overview
+A lightweight, responsive static website using HTML, CSS and JS with a mobile-first approach.
+
+### 📂 File Structure
+>Home  
+>│  
+>├── Portfolio  
+>│   ├── Ebenböck Bio (Qualifications and Experience)  
+>│   ├── Images ( Ebenböck Clinic)  
+>│   └── Client Reviews and Stories  
+>│  
+>├── Services  
+>│   ├── Treatments  
+>│   │   ├── Physiotherapy  
+>│   │   ├── Manual Therapy  
+>│   │   ├── Massages  
+>│   │   ├── Functional training  
+>│   │   └── Lymph Drainage  
+>│   │   	  
+>│   └── Workshops  
+>│       └── Group Sessions (Groups or companies)  
+>│  
+>└── Contact  
+>&nbsp;&nbsp;&nbsp;&nbsp;├── Address (with Map)  
+>&nbsp;&nbsp;&nbsp;&nbsp;├── Phone and Email  
+>&nbsp;&nbsp;&nbsp;&nbsp;└── Contact Form  
