@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../public/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 <header>
@@ -24,13 +25,13 @@
             <h2 style="text-align: center">I look forward to hearing from you.</h2>
             <p>If you would like to schedule an appointment, have any questions, or comments, please contact me either via the contact form, give me a call or contact me by WhatsApp.<br/>
                <br/>PHONE: +49 (0) 15510647213<br/>
-               EMAIL: physio.ebenboeck@gmail.com
+               EMAIL: <a href="mailto:physio.ebenboeck@gmail.com">physio.ebenboeck@gmail.com</a>
             </p>
         </div>
 
         <div class="contact-form">
             <p>Contact Form</p>
-            <form>
+            <form id="messageForm">
                 <label for="name">Input name</label>
                 <input type="text" id="name" placeholder="Enter your name">
 
@@ -40,7 +41,7 @@
                 <label for="message">Input/ Text</label>
                 <textarea id="message" placeholder="Enter your message"></textarea>
 
-                <button type="submit">Send</button>
+                <button type="submit">Send Email</button>
             </form>
         </div>
     </section>
@@ -59,6 +60,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
     </aside>
     <script src="../components/sidebar/sidebar.js"></script>
+    <script src="../components/contact-form/script.js"></script>
 </main>
     <!--Import footer-->
 <div id="footer"></div>
