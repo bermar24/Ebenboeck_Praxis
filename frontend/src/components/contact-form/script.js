@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
 
       const formData = {
-        name: document.getElementById("name").value,
+        from_name: document.getElementById("name").value,
         from_email: document.getElementById("email").value,
         to_email: "fjkun06@gmail.com",
         message: document.getElementById("message").value

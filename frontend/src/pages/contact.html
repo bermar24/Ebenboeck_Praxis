@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Contact</title>
@@ -9,61 +10,75 @@
     <!--    import font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;1,100;1,300;1,400;1,600&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="../../public/favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
+
 <body>
-<header>
-<!--Import Navbar-->
-<div id="navbar"></div>
-<script src="../components/navbar/index.js"></script>
-</header>
-<main class="container">
-    <section class="contact-section">
-        <div class="contact-text">
-            <h2 style="text-align: center">I look forward to hearing from you.</h2>
-            <p>If you would like to schedule an appointment, have any questions, or comments, please contact me either via the contact form, give me a call or contact me by WhatsApp.<br/>
-               <br/>PHONE: +49 (0) 15510647213<br/>
-               EMAIL: <a href="mailto:physio.ebenboeck@gmail.com">physio.ebenboeck@gmail.com</a>
-            </p>
-        </div>
+    <header>
+        <!--Import Navbar-->
+        <div id="navbar"></div>
+        <script src="../components/navbar/index.js"></script>
+    </header>
+    <main class="container">
+        <section class="contact-section">
+            <div class="contact-text">
+                <h2 style="text-align: center; line-height: 2rem;">I look forward to hearing from you.</h2>
+                <p>If you would like to schedule an appointment, have any questions, or comments, please contact me
+                    either via the contact form, give me a call or contact me by WhatsApp.<br />
+                    <br />📞 PHONE: <a href="tel:+4915510647213">+49 155 10647213</a><br />
+                    📧 EMAIL: <a href="mailto:physio.ebenboeck@gmail.com">physio.ebenboeck@gmail.com</a>
+                </p>
+            </div>
 
-        <div class="contact-form">
-            <p>Contact Form</p>
-            <form id="messageForm">
-                <label for="name">Input name</label>
-                <input type="text" id="name" placeholder="Enter your name">
+            <div class="contact-form">
+                <p>Contact Form</p>
+                <form id="messageForm">
+                    <div class="block">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="block">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="block">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit">Send Email</button>
+                </form>
+            </div>
+        </section>
+        <section class="map-instructions">
+            <iframe class="map-box"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.619028895687!2d8.5976766!3d50.2056517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd072208de8f05%3A0x41503aa263700292!2sPrivatpraxis%20f%C3%BCr%20Physiotherapie%20-%20Janine%20Ebenb%C3%B6ck!5e0!3m2!1sen!2sde!4v1739809042824!5m2!1sen!2sde"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="instructions-box">
+                <p>There is one parking space for clients in front of the practice<br />
+                    You will find further free parking spaces on the street<br />
+                    Small staircase to the practice entrance, <strong>not barrier-free</strong>
+                </p>
+            </div>
+        </section>
 
-                <label for="email">Input e-mail</label>
-                <input type="email" id="email" placeholder="Enter your email">
-
-                <label for="message">Input/ Text</label>
-                <textarea id="message" placeholder="Enter your message"></textarea>
-
-                <button type="submit">Send Email</button>
-            </form>
-        </div>
-    </section>
-    <section class="map-instructions">
-        <iframe class="map-box" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2553.619028895687!2d8.5976766!3d50.2056517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd072208de8f05%3A0x41503aa263700292!2sPrivatpraxis%20f%C3%BCr%20Physiotherapie%20-%20Janine%20Ebenb%C3%B6ck!5e0!3m2!1sen!2sde!4v1739809042824!5m2!1sen!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="instructions-box">
-            <p>There is one parking space for clients in front of the practice<br/>
-                You will find further free parking spaces on the street<br/>
-                Small staircase to the practice entrance, <strong>not barrier-free</strong>
-            </p>
-        </div>
-    </section>
-
-    <a href="contact.html" class="floating-button">Contact me</a>
-    <aside id="scrollToTop">
-        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="undefined"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg>
-    </aside>
-    <script src="../components/sidebar/sidebar.js"></script>
-    <script src="../components/contact-form/script.js"></script>
-</main>
+        <a href="contact.html" class="floating-button">Contact me</a>
+        <aside id="scrollToTop">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                fill="undefined">
+                <path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z" />
+            </svg>
+        </aside>
+        <script src="../components/sidebar/sidebar.js"></script>
+        <script src="../components/contact-form/script.js"></script>
+    </main>
     <!--Import footer-->
-<footer id="footer"></footer>
-<script src="../components/footer/index.js"></script>
+    <footer id="footer"></footer>
+    <script src="../components/footer/index.js"></script>
 </body>
+
 </html>

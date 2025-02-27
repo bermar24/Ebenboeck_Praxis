@@ -4,6 +4,7 @@ footer {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 2rem;
 }
 
 /* inner container (3 columns) */
@@ -96,10 +97,7 @@ footer {
   text-decoration: underline;
 }
 
-.contact-info p a:visited,
-.contact-info p a:hover,
-.contact-info p a:active,
-.contact-info p a:focus {
+.contact-info p a :where(:focus, :active, :hover, :visited) {
   color: var(--text-color);
 }
 
