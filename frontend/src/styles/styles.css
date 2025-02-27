@@ -52,14 +52,14 @@ ul,
 li,
 button,
 strong {
-  font-size: 0.75rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 0.75rem;
+  font-size: 1rem;
 }
 /*Images*/
 img {
@@ -115,8 +115,7 @@ body {
   width: 100vw;
   align-items: center;
   padding: 2rem;
-//   gap: 4rem;
-  justify-content: space-between;
+  justify-content: center;
   overflow-x: hidden;
 }
 
@@ -134,7 +133,6 @@ main {
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  //   background: red;
   width: 100%;
   gap: 2rem;
 }
@@ -142,9 +140,8 @@ main {
 @media (min-width: 576px) {
   body {
     font-size: 1.125rem;
-    // gap: 3rem;
   }
- 
+
   aside {
     flex: 1;
   }
@@ -159,15 +156,6 @@ main {
   h3 {
     font-size: 1.25rem;
   }
-  p,
-  ol,
-  ul,
-  li,
-  a,
-  button,
-  strong {
-    font-size: 1rem;
-  }
   .floating-button {
     width: auto;
     height: auto;
@@ -175,9 +163,15 @@ main {
     font-size: 1.1rem;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 768px) {
   body {
-    // gap: 3rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 480px) {
+
+  body::-webkit-scrollbar-thumb {
+    background: transparent;
   }
 }
 @media (min-width: 1200px) {
