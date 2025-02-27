@@ -1,95 +1,133 @@
 .contact-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    flex: 1;
-    position: relative;
-    padding: 1rem;
-    gap: 2rem;
-    align-items: center;
+  display: flex;
+  position: relative;
+  padding: 1rem;
+  gap: 4rem;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.contact-text{
-    padding: 0 1rem;
-    text-align: justify;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column; ;
-    align-items: center;
+.contact-text {
+  padding: 0 1rem;
+  text-align: justify;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
+
+.contact-text p a {
+  text-decoration: underline;
+}
+
+.contact-text p a :where(:focus, :active, :hover, :visited) {
+  color: var(--text-color);
+}
+
 .contact-form {
-    /*width: 48%;*/
-    background-color: var(--block);
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10px;
+  background-color: var(--block);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 60%;
 }
 .contact-form form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
-.contact-form label {
-    margin-top: 10px;
-    font-weight: bold;
+.contact-form p {
+  font-weight: bold;
+  font-size: 28px;
 }
-.contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.block {
+  width: 100%;
 }
+.contact-form :where(input, textarea) {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.contact-form :where(input, textarea):focus {
+  border: none;
+  outline-color: var(--secondary-color);
+}
+
 .contact-form textarea {
-    height: 80px;
+  height: 80px;
 }
 .contact-form button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgba(0, 123, 255, 0.27);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: rgba(0, 123, 255, 1);
+  transition: background-color 0.25s ease-in-out;
 }
 .map-instructions {
-    background-color: var(--article-color);
-    flex: 1;
-    position: relative;
-    padding: 1rem;
-    flex-direction: column;
-    gap: 2rem;
-    display: flex;
-    align-items: center;
+  background-color: var(--article-color);
+  flex: 1;
+  position: relative;
+  padding: 1rem;
+  gap: 2rem;
+  display: flex;
+  align-items: center;
 }
 .map-box {
-    width: 100%;
-    max-width: 300px;
-    margin: 1rem;
-    object-fit: cover;
-    border-radius: 5%;
-    filter: grayscale(100%) brightness(50%);
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  object-fit: cover;
+  border-radius: 5%;
+  //   filter: grayscale(100%) brightness(50%);
+  width: 100%;
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
 }
 .map-box:hover {
-    filter: none;
+  filter: none;
 }
 .instructions-box {
-    text-align: center;
+  text-align: center;
+  max-width: 485px;
 }
-@media (min-width: 768px) {
-    .contact-section {
-        display: flex;
-        flex-direction: row;
-    }
-    .map-instructions {
-        display: flex;
-        flex-direction: row;
-    }
-    .map-box{
-        width: 100%;
-        max-width: 400px;
-        height: 400px;
-        object-fit: cover;
-    }
-    .contact-form {
-        width: 48%;
-    }
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1255px) {
+  .contact-text {
+    max-width: 670px;
+    width: fit-content;
+  }
+}
+@media (max-width: 989px) {
+  .contact-section :is(.contact-form, .contact-text) {
+    width: 80%;
+  }
+
+  .contact-section {
+    gap: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .contact-section :is(.contact-form, .contact-text) {
+    width: 98%;
+  }
+  .contact-section {
+    padding-inline: 0;
+  }
+
+  .map-instructions {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
 }

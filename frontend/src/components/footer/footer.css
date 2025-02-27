@@ -1,108 +1,123 @@
-  .footer {
-    /*background-color: var(--block);*/
-    color: rgb(0, 0, 0);
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-  }
+footer {
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
 
-  /* inner container (3 columns) */
+/* inner container (3 columns) */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  row-gap: 1rem;
+}
+
+/* leftside: contact-text + Button */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  min-width: max-content;
+}
+
+/* Contact-Info text */
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* Contact me Button/left */
+.contact-me {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: rgb(38, 123, 191);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  width: fit-content;
+}
+
+.contact-me:hover {
+  background-color: rgb(8, 58, 81);
+}
+
+/* center: Logo */
+.footer-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+}
+
+.footer-logo {
+  max-height: 80px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+/* rightside: Follow us + Icon */
+.footer-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 200px;
+  gap: 10px;
+}
+.footer-right svg {
+  fill: var(--text-color);
+}
+/* Heading-right */
+.follow-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--text-color);
+
+}
+
+/* Icon-hight + Hover */
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.contact-info p a {
+  text-decoration: underline;
+}
+
+.contact-info p a :where(:focus, :active, :hover, :visited) {
+  color: var(--text-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-  }
-
-  /* leftside: contact-text + Button */
-  .footer-left {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    flex: 1;
-    min-width: 200px;
-  }
-
-  /* Contact-Info text */
-  .contact-info p {
-    margin: 5px 0;
-  }
-
-  /* Contact me Button/left */
-  .contact-me {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 8px 16px;
-    background-color: rgb(38, 123, 191);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    width: fit-content;
-  }
-
-  .contact-me:hover {
-    background-color: rgb(8, 58, 81);
-  }
-
-  /* center: Logo */
-  .footer-center {
-    flex: 1;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    min-width: 200px;
+    text-align: center;
   }
-  
-  .footer-logo {
-    max-height: 80px;
-    width: auto;
-    object-fit: contain;
-    border-radius: 0;
-  }
-  
-  /* rightside: Follow us + Icon */
+
+  .footer-left,
+  .footer-center,
   .footer-right {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-width: 200px;
+    margin: 10px 0;
   }
-  
-  /* Heading-right */
-  .follow-text {
-    margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  /* Icon-hight + Hover */
-  .social-icon {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
-    object-fit: cover;
-    border-radius: 0;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-
-    .footer-left,
-    .footer-center,
-    .footer-right {
-      margin: 10px 0;
-    }
-  }
+}

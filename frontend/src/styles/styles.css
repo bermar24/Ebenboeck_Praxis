@@ -1,163 +1,193 @@
-*{
-    box-sizing: content-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
+@import url("../components/footer/footer.css");
+@import url("../components/navbar/navbar.css");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
 }
-:root{
-    --background: rgb(200, 230, 255);
-    --block: rgb(150, 212, 220, 0.4);
-    --primary-color: rgb(38, 123, 191, 0.2);
-    --secondary-color: rgb(37, 163, 179);
-    --accent-color: rgb(18, 108, 132, 0.6);
-    --text-color: rgb(8, 58, 81);
-    /*--navbar: rgb(38, 123, 191, 0.2);*/
-    --article-color: rgb(99,148,158, 0.4);
+:root {
+  --background: rgb(200, 230, 255);
+  --block: rgb(150, 212, 220, 0.4);
+  --primary-color: rgb(38, 123, 191, 0.2);
+  --secondary-color: rgb(37, 163, 179);
+  --accent-color: rgb(18, 108, 132, 0.6);
+  --text-color: rgb(8, 58, 81);
+  --article-color: rgb(99, 148, 158, 0.4);
 }
-body{
-    min-height: 100vh ;
-    background-color: var(--background) ;
-    font-family: 'Poppins', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /*margin-top: 90px;*/
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-#navbar{
-    /*position: fixed;*/
-    top: 0;
-    width: 100%;
-    max-width: 1200px;
-    /*z-index: 1000;*/
-    margin: 0 auto;
-    /*left: 50%;*/
-    /*transform: translateX(-50%);*/
+header,
+nav {
+  width: 100%;
+  max-width: 1200px;
+}
+nav {
+  width: 100%;
 }
 /* Typography */
 h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
 h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
 h3 {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
-p, ol , ul, li, button, strong  {
-    font-size: 0.75rem;
-    margin-bottom: 1rem;
-    color: var(--text-color);
+p,
+ol,
+ul,
+li,
+button,
+strong {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
 }
 a {
-    text-decoration: none;
-    color: inherit;
-    font-size: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
 }
 /*Images*/
-img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
+
 /*contact bottom and to top*/
 .floating-button {
-    position: fixed;
-    bottom: 15px;
-    left: 15px;
-    background-color: var(--accent-color);
-    color: white;
-    padding: 12px 18px;
-    border-radius: 50%;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    text-align: center;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  height: max-content;
+  text-align: center;
 }
 .floating-button:hover {
-    background-color: white;
-    color: var(--text-color);
-    transform: scale(1.1); /* Slightly grow on hover */
+  background-color: white;
+  color: var(--text-color);
+  transform: scale(1.1); /* Slightly grow on hover */
 }
 #scrollToTop {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    /*background-color: #007bff;*/
-    /*color: white;*/
-    padding: 15px 20px;
-    /*font-size: 24px;*/
-    border-radius: 50%;
-    cursor: pointer;
-    display: none; /* Hidden by default */
-    transition: opacity 0.3s ease;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--text-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s ease;
 }
 #scrollToTop:hover {
-    background-color: white;
+  background-color: white;
+  scale: 1.15;
+}
+#scrollToTop svg {
+  fill: var(--text-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100vw;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 10px;
+}
+
+main {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  overflow:hidden;
+  margin-top: 1rem;
+
 }
 /* Media Queries for responsiveness */
 @media (min-width: 576px) {
-    body {
-        font-size: 1.125rem;
-        gap: 3rem;
-    }
-    main {
-        flex-direction: row;
-        gap: 1rem;
-    }
-    aside {
-        flex: 1;
-    }
+  body {
+    font-size: 1.125rem;
+  }
+
+  aside {
+    flex: 1;
+  }
 }
 @media (min-width: 768px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-    h2 {
-        font-size: 1.75rem;
-    }
-    h3 {
-        font-size: 1.25rem;
-    }
-    p, ol , ul, li, a, button, strong {
-        font-size: 1rem;
-    }
-    .floating-button {
-        width: auto;
-        height: auto;
-        padding: 12px 20px;
-        font-size: 1.1rem;
-    }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.25rem;
+  }
+  //   .floating-button {
+  //     width: auto;
+  //     height: auto;
+  //     padding: 12px 20px;
+  //     font-size: 1.1rem;
+  //   }
 }
-@media (min-width: 992px) {
-    body {
-        gap: 3rem;
-    }
+@media (max-width: 768px) {
+  body {
+    padding-inline: 10px;
+  }
+}
+@media (max-width: 480px) {
+  body::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 }
 @media (min-width: 1200px) {
-    h1 {
-        font-size: 3rem;
-    }
-    /*h2 {*/
-    /*    font-size: 2.5rem;*/
-    /*}*/
-    /*h3 {*/
-    /*    font-size: 2rem;*/
-    /*}*/
-    /*p, ol , ul, li, a, button, strong {*/
-    /*    font-size: 1.5rem;*/
-    /*}*/
+  h1 {
+    font-size: 3rem;
+  }
 }

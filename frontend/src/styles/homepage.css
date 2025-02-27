@@ -6,9 +6,11 @@
     justify-content: center;
 }
 .hero-image {
-    width: 100vw;
-    object-fit: cover;
+    max-width: 100%;
+    object-fit: contain;
     border-radius: 0;
+  margin-top: 1rem;
+
 }
 .hero-button-container {
     position: absolute;

@@ -1,153 +1,158 @@
-.container{
-    display: flex;
-    flex-direction: column;
+.container {
+  display: flex;
+  flex-direction: column;
 }
 .profile-intro {
-    flex: 1;
-    padding: 1.25rem;
-    border-radius: 10px;
-    text-align: left;
-    position: relative;
-    min-height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  flex: 1;
+  padding: 1.25rem;
+  border-radius: 10px;
+  text-align: left;
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 .photo-profile {
-    min-width: 150px;
-    max-width: 600px;
+  min-width: 150px;
+  max-width: 600px;
 }
 .shadowPhoto {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .shadowPhoto::before {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 100%;
-    height: 100%;
-    background-color: var(--article-color);
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--article-color);
+  z-index: -1;
 }
 .description {
-    padding: 0 1rem;
+  padding: 0 1rem;
+}
+.description p {
+  text-align: justify;
 }
 .certifications {
-    flex: 1;
-    padding: 1.25rem;
-    text-align: left;
-    position: relative;
-    min-height: 230px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--article-color);
-    color: white;
+  flex: 1;
+  padding: 1.25rem;
+  text-align: left;
+  position: relative;
+  min-height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--article-color);
+  color: white;
 }
 .portfolio {
-    flex: 1;
-    position: relative;
-    padding: 1rem;
-    display:flex;
-    flex-direction: column;
-    gap: 2rem;
+  flex: 1;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
-.portfolio img{
-    width: 100%;
-    max-width: 300px;
-    object-fit: cover;
-    border-radius: 5%;
+.portfolio img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  border-radius: 5%;
 }
 /* Reviews Section */
 .reviews-section {
-    text-align: center;
-    margin: 100px auto;
-    padding: 40px 0;
-    /*background-color: var(--primary-color);*/
-    /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
+  text-align: center;
+  margin: 100px auto;
+  padding: 40px 0;
+  /*background-color: var(--primary-color);*/
+  /*box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);*/
 }
 .reviews-title {
-    font-size: 2rem;
-    margin-bottom: 40px;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 .reviews-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 /* Stil der Review-Box */
 .review-box {
-    background-color: white;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 20px;
-    text-align: left;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 /* Name und Sterne */
 .review-name {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 .review-stars {
-    color: gold;
-    margin-bottom: 5px;
+  color: gold;
+  margin-bottom: 5px;
 }
 .review-date {
-    color: gray;
-    margin-bottom: 10px;
+  color: gray;
+  margin-bottom: 10px;
 }
 .review-text {
-    color: black;
+  color: black;
 }
 /* Pfeile */
-.prev-btn, .next-btn {
-    background-color: transparent;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 10px;
-    transition: transform 0.2s ease-in-out;
+.prev-btn,
+.next-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.2s ease-in-out;
 }
-.prev-btn:hover, .next-btn:hover {
-    transform: scale(1.1);
+.prev-btn:hover,
+.next-btn:hover {
+  transform: scale(1.1);
 }
 
- @media (min-width: 768px) {
-     .profile-intro {
-         display: flex;
-         align-items: center;
-         flex-direction: row-reverse;
-         justify-content: center;
-         margin: 20px auto;
-         max-width: 900px;
-         gap: 2rem;
-     }
-     .portfolio {
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-     }
-     .photo-profile {
-            width: 400px;
-            object-fit: cover;
-     }
-     .shadowPhoto::before {
-         top: 30px;
-         left: 30px;
-     }
+@media (min-width: 950px) {
+  .profile-intro {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 900px;
+    gap: 2rem;
+  }
+  .portfolio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .photo-profile {
+    width: 400px;
+    object-fit: cover;
+  }
+  .shadowPhoto::before {
+    top: 30px;
+    left: 30px;
+  }
 
-     .portfolio img {
-         width: 100%;
-         max-width: 300px;
-         height: 300px;
-         object-fit: cover;
-     }
-     .review-box {
-         width: 500px;
-     }
- }
+  .portfolio img {
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .review-box {
+    width: 500px;
+  }
+}
