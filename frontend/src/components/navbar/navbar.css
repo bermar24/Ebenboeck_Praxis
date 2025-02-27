@@ -1,4 +1,4 @@
-//slide in animation
+/*slide in animation*/
 @keyframes slideIn {
   0% {
     transform: translateX(100%);
@@ -8,7 +8,7 @@
   }
 }
 
-//second layer of mobile navbar
+/*second layer of mobile navbar*/
 mark {
   background-color: rgba(255, 255, 255, 0.5) !important;
   color: black;
@@ -20,7 +20,6 @@ nav {
   font-family: "Poppins", sans-serif;
   height: 90px;
 }
-
 nav ul {
   width: 100%;
   list-style: none;
