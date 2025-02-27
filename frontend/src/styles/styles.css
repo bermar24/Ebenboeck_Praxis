@@ -1,5 +1,4 @@
-@import url("../components/footer/footer.css");
-@import url("./404.css");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,11 +23,12 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-#navbar {
-  top: 0;
+header, nav {
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
+}
+nav {
+  width: 100%;
 }
 /* Typography */
 h1 {
@@ -103,7 +103,7 @@ img {
   border-radius: 50%;
   border: 1px solid var(--text-color);
   cursor: pointer;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.25s ease;
@@ -112,8 +112,8 @@ img {
   background-color: white;
   scale: 1.15;
 }
-#scrollToTop svg{
-    fill: var(--text-color)
+#scrollToTop svg {
+  fill: var(--text-color);
 }
 
 body {
@@ -173,7 +173,7 @@ main {
 }
 @media (max-width: 768px) {
   body {
-    padding: 10px;
+    padding-inline: 10px;
   }
 }
 @media (max-width: 480px) {

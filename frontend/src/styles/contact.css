@@ -88,7 +88,7 @@
   margin: 1rem;
   object-fit: cover;
   border-radius: 5%;
-//   filter: grayscale(100%) brightness(50%);
+  //   filter: grayscale(100%) brightness(50%);
   width: 100%;
   max-width: 400px;
   height: 400px;
@@ -104,9 +104,19 @@
 
 /* Media Queries for responsiveness */
 
+@media (max-width: 1255px) {
+  .contact-text {
+    max-width: 670px;
+    width: fit-content;
+  }
+}
 @media (max-width: 989px) {
   .contact-section :is(.contact-form, .contact-text) {
     width: 80%;
+  }
+
+  .contact-section {
+    gap: 2rem;
   }
 }
 @media (max-width: 768px) {
@@ -122,4 +132,3 @@
     gap: 0;
   }
 }
-
