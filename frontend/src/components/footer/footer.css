@@ -5,6 +5,7 @@ footer {
   justify-content: center;
   width: 100%;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 /* inner container (3 columns) */
@@ -15,6 +16,7 @@ footer {
   align-items: center;
   width: 90%;
   max-width: 1200px;
+  row-gap: 1rem;
 }
 
 /* leftside: contact-text + Button */
@@ -23,7 +25,7 @@ footer {
   flex-direction: column;
   justify-content: center;
   flex: 1;
-  min-width: 200px;
+  min-width: max-content;
 }
 
 /* Contact-Info text */
@@ -73,11 +75,15 @@ footer {
   min-width: 200px;
   gap: 10px;
 }
-
+.footer-right svg {
+  fill: var(--text-color);
+}
 /* Heading-right */
 .follow-text {
   font-size: 20px;
   font-weight: bold;
+  color: var(--text-color);
+
 }
 
 /* Icon-hight + Hover */

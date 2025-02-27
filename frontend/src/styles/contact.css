@@ -99,6 +99,7 @@
 }
 .instructions-box {
   text-align: center;
+  max-width: 485px;
 }
 
 /* Media Queries for responsiveness */
@@ -121,22 +122,4 @@
     gap: 0;
   }
 }
-// @media (min-width: 768px) {
-//   .contact-section {
-//     display: flex;
-//     flex-direction: row;
-//   }
-//   .map-instructions {
-//     display: flex;
-//     flex-direction: row;
-//   }
-//   .map-box {
-//     width: 100%;
-//     max-width: 400px;
-//     height: 400px;
-//     object-fit: cover;
-//   }
-//   .contact-form {
-//     width: 48%;
-//   }
-// }
+
