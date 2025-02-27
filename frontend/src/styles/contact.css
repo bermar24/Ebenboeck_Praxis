@@ -83,7 +83,7 @@
   margin: 1rem;
   object-fit: cover;
   border-radius: 5%;
-  //   filter: grayscale(100%) brightness(50%);
+  /*filter: grayscale(100%) brightness(50%);*/
   max-width: 400px;
   height: 400px;
 }

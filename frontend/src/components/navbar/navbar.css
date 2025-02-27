@@ -75,15 +75,13 @@ nav li:first-child {
   align-items: flex-start;
   justify-content: flex-start;
   padding-top: 2rem;
-  // transform: translateX(50%);
-
-  //   animation: slideIn 1s ease-in-out 10.5s 1 forwards;
-
-  //   transition: all 0.25s ease-in-out;
+  /*transform: translateX(50%);*/
+  /* animation: slideIn 1s ease-in-out 10.5s 1 forwards;*/
+  /*transition: all 0.25s ease-in-out;*/
 }
 .slide-in {
-  //   transform: translateX(0%);
-  //   animation: slideIn 1s ease-in-out 0.5s 1 forwards;
+   /*transform: translateX(0%);*/
+  /*animation: slideIn 1s ease-in-out 0.5s 1 forwards;*/
 }
 .menubar li {
   width: 100%;
