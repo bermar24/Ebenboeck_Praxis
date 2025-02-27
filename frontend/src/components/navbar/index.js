@@ -13,15 +13,8 @@ fetch("../components/navbar/navbar.html")
     document.addEventListener("DOMContentLoaded", () => {
       // Get the current pathname (e.g., '/index.html')
       const currentPath = window.location.pathname;
-      console.log("====================================");
-      console.log(currentPath);
-      console.log("====================================");
-
       // Select all links in the menu
       const navLinks = document.querySelectorAll("nav a");
-      console.log("====================================");
-      console.log(navLinks);
-      console.log("====================================");
       // Loop through each link and compare its pathname with the current path
       navLinks.forEach((link) => {
         console.log("====================================");
