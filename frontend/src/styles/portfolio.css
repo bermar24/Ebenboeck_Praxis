@@ -95,6 +95,7 @@
 .review-name {
   font-weight: bold;
   margin-bottom: 5px;
+  color: var(--accent-color)
 }
 .review-stars {
   color: gold;

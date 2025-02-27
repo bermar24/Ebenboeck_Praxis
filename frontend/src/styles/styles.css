@@ -23,6 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /*padding: 0;*/
 }
 header,
 nav {
@@ -53,14 +54,15 @@ ol,
 ul,
 li,
 button,
-strong {
+strong,
+label {
   font-size: 1rem;
   margin-bottom: 1rem;
   color: var(--text-color);
 }
 a {
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color);
   font-size: 1rem;
 }
 /*Images*/
@@ -124,30 +126,29 @@ body {
   min-height: 100vh;
   width: 100vw;
   align-items: center;
-  padding: 2rem;
+  padding: 2rem 0;
   justify-content: center;
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 10px;
-}
+/*body::-webkit-scrollbar {*/
+/*  width: 10px;*/
+/*  border-radius: 10px;*/
+/*}*/
 
-body::-webkit-scrollbar-thumb {
-  background: var(--text-color);
-  border-radius: 10px;
-}
+/*body::-webkit-scrollbar-thumb {*/
+/*  background: var(--text-color);*/
+/*  border-radius: 10px;*/
+/*}*/
 
 main {
-  max-width: 1200px;
+  /*max-width: 1200px;*/
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 2rem;
   overflow:hidden;
   margin-top: 1rem;
-
 }
 /* Media Queries for responsiveness */
 @media (min-width: 576px) {
@@ -169,17 +170,17 @@ main {
   h3 {
     font-size: 1.25rem;
   }
-  //   .floating-button {
-  //     width: auto;
-  //     height: auto;
-  //     padding: 12px 20px;
-  //     font-size: 1.1rem;
-  //   }
+  .floating-button {
+    width: auto;
+    height: auto;
+      padding: 12px 20px;
+    font-size: 1.1rem;
+  }
 }
 @media (max-width: 768px) {
-  body {
-    padding-inline: 10px;
-  }
+  /*body {*/
+  /*  padding-inline: 10px;*/
+  /*}*/
 }
 @media (max-width: 480px) {
   body::-webkit-scrollbar-thumb {
@@ -189,5 +190,36 @@ main {
 @media (min-width: 1200px) {
   h1 {
     font-size: 3rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  /*brown based*/
+  /*:root {*/
+  /*  --background: rgb(55, 25, 0);*/
+  /*  --block: rgba(105, 43, 35, 0.4);*/
+  /*  --primary-color: rgba(217, 132, 64, 0.2);*/
+  /*  --secondary-color: rgb(218, 92, 76);*/
+  /*  --accent-color: rgba(237, 147, 123, 0.6);*/
+  /*  --text-color: rgb(247, 197, 174);*/
+  /*  --article-color: rgba(156, 107, 97, 0.4);*/
+  /*}*/
+    /*Dark blue based*/
+  /*:root {*/
+  /*  --background: rgb(15, 25, 45);*/
+  /*  --block: rgba(30, 50, 80, 0.6);*/
+  /*  --primary-color: rgba(20, 92, 160, 0.3);*/
+  /*  --secondary-color: rgb(40, 130, 180);*/
+  /*  --accent-color: rgba(60, 150, 200, 0.7);*/
+  /*  --text-color: rgb(220, 230, 245);*/
+  /*  --article-color: rgba(80, 110, 140, 0.4);*/
+  /*}*/
+  :root {
+    --background: rgb(25, 40, 65);
+    --block: rgba(40, 60, 90, 0.6);
+    --primary-color: rgba(30, 110, 180, 0.4);
+    --secondary-color: rgb(50, 150, 200);
+    --accent-color: rgba(80, 170, 220, 0.7);
+    --text-color: rgb(230, 240, 255);
+    --article-color: rgba(100, 130, 160, 0.5);
   }
 }
