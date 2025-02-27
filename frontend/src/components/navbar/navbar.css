@@ -8,10 +8,19 @@
   }
 }
 
+//second layer of mobile navbar
+mark {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+  padding: 2px;
+  border-radius: 4px;
+  width: 100%;
+}
 nav {
   font-family: "Poppins", sans-serif;
   height: 90px;
 }
+
 nav ul {
   width: 100%;
   list-style: none;
@@ -62,15 +71,15 @@ nav li:first-child {
   align-items: flex-start;
   justify-content: flex-start;
   padding-top: 2rem;
-    // transform: translateX(50%);
+  // transform: translateX(50%);
 
-//   animation: slideIn 1s ease-in-out 10.5s 1 forwards;
+  //   animation: slideIn 1s ease-in-out 10.5s 1 forwards;
 
   //   transition: all 0.25s ease-in-out;
 }
 .slide-in {
   //   transform: translateX(0%);
-//   animation: slideIn 1s ease-in-out 0.5s 1 forwards;
+  //   animation: slideIn 1s ease-in-out 0.5s 1 forwards;
 }
 .menubar li {
   width: 100%;
